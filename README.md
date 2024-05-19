@@ -84,5 +84,50 @@ Para testar este código, siga os passos abaixo:
 
 Nota: Em breve, adicionarei uma nova View. Quando você clicar no nome da tarefa, será apresentada a descrição da tarefa.
 
-# Teoria
-***irei adicionar***
+# Teoria do padrão MVC
+
+# Arquitetura de Software
+
+A arquitetura de software é o planejamento geral de uma aplicação, garantindo o melhor desempenho para a execução de um sistema. Ela envolve a organização dos componentes, definições de estruturas, protocolos de comunicação, sincronização, acesso a dados e muito mais. Assim como um projeto arquitetônico define como um imóvel será construído, a arquitetura de software estabelece padrões técnicos para a segurança, escalabilidade e performance de um sistema. A escolha do modelo arquitetural impacta diretamente a qualidade, manutenção e escalabilidade do software.
+
+Antes de mergulhar nos conceitos da arquitetura MVC, é importante entender um pouco mais sobre o padrão arquitetural Tiers e Layers, que será complementado pelo MVC.
+
+## Tiers e Layers
+
+### Tiers
+
+As camadas de Tiers são mais densas e físicas, formando uma grande caixa. Antigamente, essa camada era conhecida como a infraestrutura física, incluindo servidores, redes interligadas e hardware em geral. No entanto, hoje em dia, o conceito de Tiers também abrange os grandes componentes arquiteturais e camadas individuais de um sistema. Adicionou-se uma parte lógica ao tier, incluindo banco de dados e contêineres grandes de uma aplicação. Os Tiers geralmente estão relacionados à infraestrutura e à disponibilidade do sistema. Por exemplo, um sistema de três Tiers pode ter uma camada de apresentação (front-end), uma camada de lógica de negócios (back-end) e uma camada de banco de dados.
+
+### Layers
+
+As camadas de Layers são menores, uma abstração mais interna, focando na organização do código-fonte. Elas representam a estrutura lógica da aplicação e como os diferentes módulos ou componentes se relacionam. Por exemplo, em uma aplicação web, você pode ter camadas como interface do usuário (UI), lógica de negócios e acesso a dados. Cada camada tem responsabilidades específicas e se comunica com outras camadas de maneira bem definida. Algumas características das camadas Layers incluem:
+
+- **Organização interna**: As Layers organizam os conteúdos dentro de um projeto.
+- **Camadas internas**: Elas definem como o código é dividido e agrupado.
+- **Exemplo prático**: Imagine as pastas dentro do seu projeto, representando diferentes partes da aplicação.
+
+Em resumo, Tiers se concentram na infraestrutura física e nos grandes componentes, enquanto Layers tratam da organização interna e lógica do código.
+
+## Padrão Arquitetural MVC (Model-View-Controller)
+
+O MVC (Model-View-Controller) é um padrão arquitetural amplamente utilizado no desenvolvimento de software. Ele oferece uma divisão clara e organizada das responsabilidades entre os componentes de uma aplicação. Vamos analisar suas anotações e fazer as correções:
+
+### Model
+
+- **Regra de Negócio**: Contém a lógica de negócio da aplicação.
+- Define as propriedades das entidades.
+- Pode ser dividido em várias camadas, como serviços, repositórios e modelos de domínio.
+
+### View
+
+- **Regra de Visualização**: Cuida da interface e da experiência do usuário.
+- Interage diretamente com o usuário.
+- Exibe os dados processados pelo controller.
+- É puramente a interface da aplicação.
+
+### Controller (Ponto de Entrada)
+
+- **Camada Core**: Responsável pela lógica e inteligência da aplicação.
+- Recebe requisições dos usuários e interage com os modelos.
+- Pode fazer chamadas para vários Models.
+- Constrói a view com base nas informações coletadas dos Models.
