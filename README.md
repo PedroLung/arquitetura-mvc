@@ -131,3 +131,19 @@ O MVC (Model-View-Controller) é um padrão arquitetural amplamente utilizado no
 - Recebe requisições dos usuários e interage com os modelos.
 - Pode fazer chamadas para vários Models.
 - Constrói a view com base nas informações coletadas dos Models.
+
+# Desvantagens do MVC:
+
+**Complexidade:** O padrão MVC pode ser complexo para pequenos aplicativos, pois requer a separação de responsabilidades entre os componentes.
+
+**Desempenho:** Como o MVC envolve separação de responsabilidades, pode haver atrasos devido à comunicação entre os componentes.
+
+**Dificuldade de Configuração:** A configuração inicial de um projeto MVC pode ser bastante trabalhosa.
+
+## Como superar as desvantagens:
+
+**Escolha apropriada do padrão:** Para aplicativos menores, pode ser mais apropriado usar um padrão mais simples, como o MVP (Model-View-Presenter) ou MVVM (Model-View-ViewModel).
+
+**Otimização de Desempenho:** O desempenho pode ser melhorado através de várias técnicas de otimização, como o uso de cache.
+
+**Uso de Frameworks:** Muitos frameworks, como o Django para Python ou o Spring para Java, facilitam a configuração e o uso do padrão MVC.
